@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body class="w-full">
+    <header
+      class="flex md:justify-between flex-col md:flex-row md:py-4 items-center bg-blue-600"
+    >
+      <img
+        src="../img/logo.jpeg"
+        alt=""
+        class="md:h-12 md:w-12 w-48 h-30 mx-auto md:ml-4 md:mt-0 mt-0 rounded-xl shadow-sm"
+      />
+      <nav class="">
+        <ul class="flex gap-4 flex-col md:flex-row items-center md:mt-0 mt-4">
+          <li>
+            <a
+              href="../pages/admin.html"
+              class="uppercase font-sans font-bold text-white text-xl"
+              >Inicio</a
+            >
+          </li>
+          <li>
+            <a
+              href="../pages/perfil.html"
+              class="uppercase font-sans font-bold text-white text-xl"
+              >Perfil</a
+            >
+          </li>
+          <li class="mr-4">
+            <a
+              href="../login.html"
+              class="uppercase font-sans font-bold text-white text-xl"
+              >Cerrar sesion</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="md:w-[1500px] w-full mx-auto">
+      <h1 class="text-red-500 mt-6 font-bold text-3xl text-center">
+        Administrador de Contratos
+      </h1>
+      <div class="flex justify-between mt-10 mx-2">
+        <div class="">
+          <a
+            href="/pages/registro_Usuario.html"
+            class="bg-red-400 px-6 py-3 rounded-lg shadow-lg"
+            >Crear un nuevo contrato</a
+          >
+        </div>
+        <div class="flex items-center justify-center gap-2">
+          <svg
+            class="w-8 h-8"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </g>
+          </svg>
+          <input
+            type="text"
+            class="border border-black px-6 py-2 placeholder:text-gray-400"
+            placeholder="Buscar el usuario"
+          />
+        </div>
+      </div>
+      <div
+        class="relative overflow-x-auto shadow-md sm:rounded-lg mx-auto mt-8"
+      >
+        <table class="md:w-full text-sm text-left">
+          <thead
+            class="text-[10px] md:text-xs text-white uppercase bg-gray-50 dark:bg-gray-700"
+          >
+            <tr class="">
+              <th scope="col" class="px-6 py-3">Usuario</th>
+              <th scope="col" class="px-6 py-3">Rol</th>
+              <th scope="col" class="px-6 py-3">Correo</th>
+              <th scope="col" class="px-6 py-3">Telefono</th>
+              <th scope="col" class="px-6 py-3">Acciones</th>
+            </tr>
+          </thead>
+          <tbody class="flex-col md:flex-none">
+            <tr class="bg-blue-400 border-b">
+              <th scope="row" class="px-6 py-4 font-bold text-black">
+                Cagonzalez
+              </th>
+              <td class="px-6 py-4">Administrador</td>
+              <td class="px-6 py-4">Carlos.gonzalez923@gmail.com</td>
+              <td class="px-6 py-4">3177971283</td>
+              <td
+                class="px-6 py-4 md:flex-row flex flex-col md:gap-2 space-y-2"
+              >
+                <a
+                  href="#"
+                  class="border px-2 py-2 bg-green-400 rounded-lg hover:pointer hover:bg-green-700 hover:font-bold"
+                  >Editar</a
+                >
+                <a
+                  href="#"
+                  class="border bg-red-400 px-2 py-2 rounded-lg hover:pointer hover:bg-red-700 hover:font-bold"
+                  >Eliminar</a
+                >
+              </td>
+            </tr>
+            <tr class="bg-blue-400 border-b">
+              <th scope="row" class="px-6 py-4 font-bold text-black">
+                laurajimena
+              </th>
+              <td class="px-6 py-4">Secretaria</td>
+              <td class="px-6 py-4">laura.rojas13@gmail.com</td>
+              <td class="px-6 py-4">3177971283</td>
+              <td
+                class="px-6 py-4 md:flex-row flex flex-col md:gap-2 space-y-2"
+              >
+                <a
+                  href="#"
+                  class="border px-2 py-2 bg-green-400 rounded-lg hover:pointer hover:bg-green-700 hover:font-bold"
+                  >Editar</a
+                >
+                <a
+                  href="#"
+                  class="border bg-red-400 px-2 py-2 rounded-lg hover:pointer hover:bg-red-700 hover:font-bold"
+                  >Eliminar</a
+                >
+              </td>
+            </tr>
+            <tr class="bg-blue-400 border-b">
+              <th scope="row" class="px-6 py-4 font-bold text-black">
+                camilolosano
+              </th>
+              <td class="px-6 py-4">Supervisor</td>
+              <td class="px-6 py-4">camilo.lozano1231@gmail.com</td>
+              <td class="px-6 py-4">3177971283</td>
+              <td
+                class="px-6 py-4 md:flex-row flex flex-col md:gap-2 space-y-2"
+              >
+                <a
+                  href="#"
+                  class="border px-2 py-2 bg-green-400 rounded-lg hover:pointer hover:bg-green-700 hover:font-bold"
+                  >Editar</a
+                >
+                <a
+                  href="#"
+                  class="border bg-red-400 px-2 py-2 rounded-lg hover:pointer hover:bg-red-700 hover:font-bold"
+                  >Eliminar</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <footer class="bg-blue-600 md:bottom-0 md:absolute w-full py-4">
+      <p class="text-center text-white font-bold text-xl">
+        Prototipo realizado por carlos alberto gonzalez ortiz - Ficha 2758313
+      </p>
+    </footer>
+  </body>
+</html>

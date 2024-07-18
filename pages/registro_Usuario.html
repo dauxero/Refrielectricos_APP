@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body class="">
+    <header
+      class="flex md:justify-between flex-col md:flex-row md:py-4 items-center bg-blue-600"
+    >
+      <img
+        src="./img/logo.jpeg"
+        alt=""
+        class="md:h-12 md:w-12 w-48 h-30 mx-auto md:ml-4 md:mt-0 mt-0 rounded-xl shadow-sm"
+      />
+      <nav class="">
+        <ul class="flex gap-4 flex-col md:flex-row items-center md:mt-0 mt-4">
+          <li>
+            <a
+              href="admin.html"
+              class="uppercase font-sans font-bold text-white text-xl"
+              >Inicio</a
+            >
+          </li>
+          <li>
+            <a
+              href="perfil.html"
+              class="uppercase font-sans font-bold text-white text-xl"
+              >Perfil</a
+            >
+          </li>
+          <li class="mr-4">
+            <a
+              href="login.html"
+              class="uppercase font-sans font-bold text-white text-xl"
+              >Cerrar sesion</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main
+      class="bg-blue-400 w-[1200px] h-[ml-4] border mx-auto rounded-xl mt-10 font-serif"
+    >
+      <h2 class="text-2xl font-bold mt-10 text-center uppercase">
+        Registro de nuevo usuario
+      </h2>
+      <form id="formulario">
+        <div class="grid grid-cols-2 mt-10">
+          <div class="flex justify-center items-center gap-4">
+            <label for="" class="font-medium text-xl">Usuario</label>
+            <input
+              type="text"
+              class="border rounded-lg px-4 shadow-lg"
+              id="usuario"
+            />
+          </div>
+          <div class="flex justify-center items-center gap-4">
+            <label for="" class="font-medium text-xl">Password</label>
+            <input
+              type="password"
+              class="border rounded-lg px-4 shadow-lg"
+              id="password"
+            />
+          </div>
+        </div>
+        <div class="grid grid-cols-2 mt-10">
+          <div class="flex justify-center items-center gap-4">
+            <label for="" class="font-medium text-xl">Nombre</label>
+            <input
+              type="text"
+              class="border rounded-lg px-4 shadow-lg"
+              id="nombre"
+            />
+          </div>
+          <div class="flex justify-center items-center gap-4">
+            <label for="" class="font-medium text-xl">Apellido</label>
+            <input
+              type="text"
+              class="border rounded-lg px-4 shadow-lg"
+              id="apellido"
+            />
+          </div>
+        </div>
+        <div class="grid grid-cols-2 mt-10">
+          <div class="flex justify-center gap-4 items-center">
+            <label for="" class="font-medium text-xl">Correo</label>
+            <input
+              type="email"
+              class="border rounded-lg w-[300px] px-4 shadow-lg"
+              id="correo"
+            />
+          </div>
+          <div class="flex justify-center gap-4 items-center">
+            <label for="" class="font-medium text-xl">Telefono</label>
+            <input
+              type="text"
+              class="border rounded-lg px-2 shadow-lg"
+              id="telefono"
+            />
+          </div>
+        </div>
+        <div class="grid grid-cols-2 mt-10">
+          <div class="flex justify-center gap-4 items-center">
+            <label for="" class="font-medium text-xl">Rol</label>
+            <select name="" id="rol" class="px-4 border-none rounded-lg py-2">
+              <option value="">------</option>
+              <option value="Administrador">Administrador</option>
+              <option value="Supervisor">Supervisor</option>
+              <option value="Secretaria">Secretaria</option>
+              <option value="Inventario">Inventario</option>
+            </select>
+          </div>
+        </div>
+        <div class="flex justify-center mt-10 space-x-4">
+          <button
+            class="bg-green-600 border px-2 py-2 rounded-lg text-xl hover:font-bold hover:bg-green-700"
+          >
+            Guardar
+          </button>
+          <a
+            class="bg-red-600 border px-2 py-2 rounded-lg text-xl hover:font-bold hover:bg-red-700"
+            href="/modules/modulo_Usuarios.html"
+          >
+            Cancelar
+          </a>
+        </div>
+        <div
+          id="mensaje"
+          class="text-center text-red-800 text-xl font-bold mt-6"
+        ></div>
+      </form>
+    </main>
+    <footer class="bg-blue-600 md:bottom-0 md:absolute w-full py-4">
+      <p class="text-center text-white font-bold text-xl">
+        Prototipo realizado por carlos alberto gonzalez ortiz - Ficha 2758313
+      </p>
+    </footer>
+    <script src="js/validarNuevoUsuario.js"></script>
+  </body>
+</html>

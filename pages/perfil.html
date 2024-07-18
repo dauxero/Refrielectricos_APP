@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-400 w-full">
+    <header
+        class="flex md:justify-between flex-col md:flex-row md:py-4 items-center bg-blue-600"
+      >
+        <img
+          src="../img/logo.jpeg"
+          alt=""
+          class="md:h-12 md:w-12 w-48 h-30 mx-auto md:ml-4 md:mt-0 mt-0 rounded-xl shadow-sm"
+        />
+        <nav class="">
+          <ul class="flex gap-4 flex-col md:flex-row items-center md:mt-0 mt-4">
+            <li>
+              <a
+                href="admin.html"
+                class="uppercase font-sans font-bold text-white text-xl"
+                >Inicio</a
+              >
+            </li>
+            <li>
+              <a
+                href="perfil.html"
+                class="uppercase font-sans font-bold text-white text-xl"
+                >Perfil</a
+              >
+            </li>
+            <li class="mr-4">
+              <a
+                href="../login.html"
+                class="uppercase font-sans font-bold text-white text-xl"
+                >Cerrar sesion</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+    <div class="mx-auto bg-white rounded-xl shadow-xl sm:w-[1500px] w-full md:mt-4 container">
+        <div class="grid md:grid-cols-2 grid-cols-1">
+            <div class="bg-gray-600 md:w-[600px] flex flex-col w-full pb-8">
+                <div class="mt-6 mx-auto">
+                    <img src="../img/perfil.jpg" alt="" class="h-40 w-40 rounded-full bg-cover">
+                </div>
+                <div class="text-center space-y-6">
+                    <h2 class="text-white text-2xl mt-2 uppercase font-bold mt-4">Carlos gonzalez</h2>
+                    <p class="text-xl text-white">Rol: Admin</p>
+                    <p class="text-xl text-white">Correo: Carlos.gonzalez923@gmail.com </p>
+                    <p class="text-xl text-white">Fecha de ingreso: xx/xx/2024</p>
+                    <p class="text-xl text-white">fecha de crecion: xx/xx/2024</p>
+                </div>
+            </div>
+            <div class="flex gap-14 mt-20 flex-col md:flex-row mx-auto space-y-6 md:space-y-0 mb-10 md:ml-16"> 
+                <div class="bg-blue-200 rounded-xl w-[150px] h-[70px] py-4 px-2 flex items-center  text-center shadow-lg">
+                    <a href="perfilCambioPassword.html" class="text-black text-lg font-bold">Cambiar Contraseña</a>
+                </div>
+                <div class="bg-blue-200 rounded-xl w-[150px] h-[70px] py-4 px-2 items-center text-center shadow-lg">
+                    <a href="editarPerfil.html" class="text-black text-lg font-bold ">Editar Perfil</a>
+                </div>  
+            </div>
+        </div>  
+    </div>  
+
+    <footer class="bg-blue-600 py-4 w-full none md:absolute md:bottom-0 md:mt-4">
+      
+            <p class="text-center text-white font-bold text-xl">
+                          Prototipo realizado por carlos alberto gonzalez ortiz - Ficha 2758313
+            </p>
+           
+                
+    </div>
+   
+        
+</body>
+</html>
